@@ -1,5 +1,5 @@
-# FROM ubuntu:20.04
-FROM registry.met.no/baseimg/ubuntu:20.04
+ARG BASE_IMAGE=ubuntu:20.04
+FROM $BASE_IMAGE
 
 LABEL maintainer="massimods@met.no"
 
