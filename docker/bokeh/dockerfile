@@ -9,7 +9,7 @@ RUN apt-get update && apt-get -y dist-upgrade && apt-get install -y apt-utils gi
 
 RUN apt-get update && apt-get install -y software-properties-common curl && curl -sL https://deb.nodesource.com/setup_14.x | bash -
 RUN apt-get update && apt-get install -y --no-install-recommends nodejs 
-RUN apt-get install -y libproj-dev libgeos-dev proj-bin proj-data python3-gdal
+RUN apt-get install -y libproj-dev libgeos-dev proj-bin proj-data python3-gdal python3-mapscript
 
 ENV VIRTUAL_ENV=/opt/venv
 RUN python3 -m venv $VIRTUAL_ENV
